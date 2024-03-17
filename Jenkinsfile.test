@@ -1,0 +1,6 @@
+job('example-job') {
+    description('This is an example DSL job')
+    steps {
+        shell('echo "Hello, world!"')
+    }
+}
