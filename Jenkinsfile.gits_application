@@ -1,0 +1,20 @@
+pipelineJob("gist-application-deployment"){
+description()
+parameters {
+    choiceParam("jobInputType",["buildandDeploy","Deploy"])
+    stringParam("BRANCH_NAME","","Enter branch name")
+}
+definition {
+    cpsScm {
+        scm {
+            git {
+                remote {
+                    url("")
+                }
+                branch("*/main")
+            }
+        }
+        scriptPath("")
+    }
+}
+}
