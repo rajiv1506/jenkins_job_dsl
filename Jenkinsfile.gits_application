@@ -9,12 +9,12 @@ definition {
         scm {
             git {
                 remote {
-                    url("")
+                    url("https://github.com/rajiv1506/gist-application.git")
                 }
                 branch("*/main")
             }
         }
-        scriptPath("")
+        scriptPath("Jenkinsfile")
     }
 }
 }
